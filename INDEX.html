@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sound Effects Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sound Effects Generator</h1>
+    <textarea id="textInput" placeholder="Enter a prompt for the sound effect..."></textarea>
+    <label for="duration">Duration (0.5 to 22 seconds):</label>
+    <input type="number" id="duration" min="0.5" max="22" step="0.1" value="5">
+    <label for="influence">Prompt Influence (0 to 1):</label>
+    <input type="range" id="influence" min="0" max="1" step="0.1" value="0.3">
+    <button id="generateBtn">Generate Sound</button>
+    <audio id="audioPlayer" controls></audio>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
